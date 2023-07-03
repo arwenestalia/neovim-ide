@@ -1,0 +1,39 @@
+Arwen Estalia's Neovim IDE
+--------------------------
+
+Upon request, this repository is a bundle of Neovim plugins and settings
+which form a base for efficient text and source code editing.
+
+The main components of the bundle are:
+- Packer
+- Telescope
+- Treesitter
+
+However this repository does not include:
+- a collection of keymaps
+- sane default settings
+as those are too subjective to be included in a public repository.
+This repository is meant as a reference or starting point for your
+own Neovim configuration, not a drop-in all-in-one package that is
+ready to use outside the box.
+
+
+Installation
+------------
+
+git clone --depth 1 https://github.com/arwenestalia/esta-neovim-ide ~/.config/nvim/lua/arwen
+
+
+Usage
+-----
+
+Put the following at the start of your ~/.config/nvim/init.lua
+followed by your personal config.
+
+require("arwen").init({
+--  arwen module config
+})
+
+Restart Neovim, ignore the presented errors and run :PackerSync
+then restart Neovim again.
+For available parameters and defaults check config.lua
