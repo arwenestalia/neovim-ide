@@ -21,7 +21,8 @@ ready to use outside the box.
 Installation
 ------------
 
-git clone --depth 1 https://github.com/arwenestalia/esta-neovim-ide ~/.config/nvim/lua/arwen
+1. Install packer (https://github.com/wbthomason/packer.nvim)
+2. git clone --depth 1 https://github.com/arwenestalia/neovim-ide ~/.config/nvim/lua/arwen
 
 
 Usage
